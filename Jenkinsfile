@@ -11,6 +11,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
+		git branch: 'master',
                 url: 'https://github.com/ANONYMOUSDAWGG/devops-pipeline-4.git'
             }
         }
